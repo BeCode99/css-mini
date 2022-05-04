@@ -7,38 +7,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(30, 22, 82);
 }
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
     border-radius: 15px;
     box-shadow: 0px 15px 25px  rgb(17, 9, 70);
     position: relative;
 }
-ul li{
+ul li {
     backdrop-filter: blur(15px);
-    z-index: 3;
+   z-index: 20;
     /* opacity: 0.25; */
+    list-style: none;
+
 }
 ul li a {
-    
-    font-size: 4em;
     position: relative;
-    display: flex;
-    align-items:  center;
+    display: inline-block;
+    color: white;
     padding: 20px 34px;
-    z-index: 4;
-    
-    
+    z-index: 40;
 }
 ul li a ion-icon{
+    font-size: 4em;
     opacity: 0.25;
     transition: 0.25s;
-    color: white;
+    pointer-events: none;
 
 }
 ul li:hover a ion-icon{
@@ -47,7 +45,8 @@ ul li:hover a ion-icon{
 #marker{
     position: absolute;
     top: 0;
-    z-index: 1
+    transition: 0.5s;
+    z-index: 1;
 }
 #marker::before {
     content: '';
