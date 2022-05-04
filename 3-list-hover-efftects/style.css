@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #242231;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+body section {
+  position: relative;
+}
+
+body section::before {
+  content: '';
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  border-radius: 50%;
+  -webkit-transform: translate(-300px, -250px);
+          transform: translate(-300px, -250px);
+}
+
+body section::after {
+  content: '';
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(#ffbd30));
+  background: linear-gradient(0deg, #22c1c3 0%, #ffbd30 100%);
+  border-radius: 50%;
+  -webkit-transform: translate(300px, 250px);
+          transform: translate(300px, 250px);
+}
+
+body .card {
+  position: relative;
+  min-width: 400px;
+  min-height: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 100;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 25px 45px #3f3939;
+          box-shadow: 0px 25px 45px #3f3939;
+  border-right: 0.2px solid #332f2f;
+  border-bottom: 0.2px solid #332f2f;
+}
+
+body .card h3 {
+  color: white;
+  padding: 20px 20px;
+}
+
+body .card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 20px;
+  background-color: rgba(83, 82, 82, 0.26);
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  height: 75px;
+}
+/*# sourceMappingURL=style.css.map */
