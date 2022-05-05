@@ -44,15 +44,14 @@ body{
     }
 
     .card {
-        position: relative;
+       
         min-width: 400px;
         min-height: 600px;
         background: rgba(255, 255, 255, 0.1);
         z-index: 100;
         backdrop-filter: blur(15px);
         border-radius: 15px;
-        overflow: hidden;
-        border: 1px solid rgb(255,255, 255, 0.5);
+        border: 1px solid rgb(255, 255, 255, 0.5);
         box-shadow: 0px 25px 45px  rgb(0, 0, 0, 0.1);
         border-right: 1px solid rgb(255,255, 255, 0.2);
         border-bottom: 1px solid rgb(255,255, 255, 0.2);
@@ -63,18 +62,71 @@ body{
         }
 
         .item {
+            position: relative;
             display: flex;
-            justify-content: center;
+            // justify-content: space-around;
             align-items: center;
             margin: 10px 20px;
             background-color: rgba(83, 82, 82, 0.26);
             overflow:hidden;
             border-radius: 8px;
-            position: relative;
-            height: 75px;
+            // height: 76px;
+            overflow: hidden;
+            object-fit: content;
+            cursor: pointer;
+            transition: 0.25s;
+           
+            &:hover{
+                background-color: white;
+                transform: scale(1.15) translate(30px, -15px);
+
+                .content {
+                    color: black;
+
+                    .rank {
+                        right: 30px;
+                        color: rgba(51, 228, 228, 0.938);
+                    }
+                }
+
+                
+                
+            }
+
+            .imgbox {
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                height: 76px;
+                width: 76px;
+                padding: 8px;
+
+                .image {
+                    object-fit: content;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+
+            .content {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                padding: 8px;
+               color: white;
+                .rank{
+                    position: absolute;
+                    right: -60px;
+                    // padding-right: 15px;
+                    font-size: 2rem;
+                    transition: 0.5s;
+                }
+            }
+
         }
     }
-
+    
 }
 
 
