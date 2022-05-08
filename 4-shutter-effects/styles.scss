@@ -1,4 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
 }
+section {
+    background-color: rgb(54, 68, 75);
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    .content {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+       
+
+        .valueShutter {
+            font-size: 6rem;
+            color: rgb(0, 247, 234);
+          
+            &::after {
+                content: '%';
+            }
+        }
+        .range {
+            // position: relative;
+            height: 30px;
+            width: 500px;
+            cursor: pointer;
+            appearance: none;
+            border-radius: 15px;
+            background: rgb(216, 111, 146);
+            border: 1px solid rgb(255,255, 255, 0.5);
+            box-shadow: 4px 15px 30px rgb(216, 111, 146, 0.5);
+            overflow: hidden;
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                height: 28px;
+                width: 28px;
+                background-color: rgba(207, 48, 207, 0.274);
+                border-radius: 50%;
+                border: 6px solid yellow;
+                box-shadow: -415px 0 100px 400px rgb(0, 247, 234, 0.7);
+                z-index: 3;
+            }
+        }
+    
+    }
+
+    .glass {
+        background-color: rgb(255,255,255,0.5)
+        
+    }
+}
+
