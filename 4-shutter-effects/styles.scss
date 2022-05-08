@@ -8,19 +8,80 @@
 
 }
 section {
-    background-color: rgb(54, 68, 75);
+    background-color: rgb(12, 25, 29);
     height: 100vh;
     width: 100vw;
     display:flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+
+    .filterRightTop{
+        position: fixed;
+        height: 50%;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255,0.1);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-left:0.5px solid rgba(255, 255, 255, 0.151);
+        border-bottom:0.5px solid rgba(255, 255, 255, 0.151);
+        z-index: 2;
+        pointer-events: none;
+    }
+    .filterLeftTop{
+        position: fixed;
+        height: 50%;
+        width: 50%;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255,0.1);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-right:0.5px solid rgba(255, 255, 255, 0.151);
+        border-bottom:0.5px solid rgba(255, 255, 255, 0.151);
+        z-index: 2;
+        pointer-events: none;
+
+    }
+    .filterRightBottom{
+        position: fixed;
+        height: 50%;
+        width: 50%;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255,0.1);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-left:0.5px solid rgba(255, 255, 255, 0.151);
+        border-top:0.5px solid rgba(255, 255, 255, 0.151);
+        z-index: 2;
+        pointer-events: none;
+
+    }
+    .filterLeftBottom{
+        position: fixed;
+        height: 50%;
+        width: 50%;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255,0.1);
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-right:0.5px solid rgba(255, 255, 255, 0.151);
+        border-top:0.5px solid rgba(255, 255, 255, 0.151);
+        z-index: 2;
+       pointer-events: none; 
+
+    }
     .content {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+       
        
 
         .valueShutter {
@@ -42,6 +103,8 @@ section {
             border: 1px solid rgb(255,255, 255, 0.5);
             box-shadow: 4px 15px 30px rgb(216, 111, 146, 0.5);
             overflow: hidden;
+         
+
 
             &::-webkit-slider-thumb {
                 appearance: none;
@@ -51,15 +114,13 @@ section {
                 border-radius: 50%;
                 border: 6px solid yellow;
                 box-shadow: -415px 0 100px 400px rgb(0, 247, 234, 0.7);
-                z-index: 3;
+                
             }
         }
     
     }
 
-    .glass {
-        background-color: rgb(255,255,255,0.5)
-        
-    }
 }
+
+
 

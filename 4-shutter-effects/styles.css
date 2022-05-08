@@ -7,12 +7,69 @@
 }
 
 section {
-  background-color: rgb(54, 68, 75);
+  background-color: rgb(12, 25, 29);
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+section .filterRightTop {
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.151);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.151);
+  z-index: 2;
+  pointer-events: none;
+}
+section .filterLeftTop {
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.151);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.151);
+  z-index: 2;
+  pointer-events: none;
+}
+section .filterRightBottom {
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.151);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.151);
+  z-index: 2;
+  pointer-events: none;
+}
+section .filterLeftBottom {
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.151);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.151);
+  z-index: 2;
+  pointer-events: none;
 }
 section .content {
   display: flex;
@@ -47,10 +104,6 @@ section .content .range::-webkit-slider-thumb {
   border-radius: 50%;
   border: 6px solid yellow;
   box-shadow: -415px 0 100px 400px rgba(0, 247, 234, 0.7);
-  z-index: 3;
-}
-section .glass {
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */
