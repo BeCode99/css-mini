@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  background: #fff;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+section .sidebar {
+  height: 100%;
+  background-color: rgba(182, 105, 175, 0.534);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=styles.css.map */

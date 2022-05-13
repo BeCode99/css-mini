@@ -1,0 +1,17 @@
+section
+   div.sibar  
+        sibar-header
+            logo 
+            toggle
+        sibar-search
+           icon  
+           input-search     
+        list_menu
+        list-item 
+            item-icon 
+            item-name 
+     account
+        info_login
+        button_logout
+
+   div.home_content       
